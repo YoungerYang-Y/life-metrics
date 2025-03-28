@@ -6,12 +6,25 @@
 // biome-ignore lint: disable
 export {}
 declare global {
+  const BarChart: typeof import('echarts/charts')['BarChart']
+  const CanvasRenderer: typeof import('echarts/renderers')['CanvasRenderer']
+  const ECharts: typeof import('vue-echarts')['ECharts']
   const EffectScope: typeof import('vue')['EffectScope']
+  const GridComponent: typeof import('echarts/components')['GridComponent']
+  const LegendComponent: typeof import('echarts/components')['LegendComponent']
+  const LineChart: typeof import('echarts/charts')['LineChart']
+  const PieChart: typeof import('echarts/charts')['PieChart']
+  const TitleComponent: typeof import('echarts/components')['TitleComponent']
+  const ToolboxComponent: typeof import('echarts/components')['ToolboxComponent']
+  const TooltipComponent: typeof import('echarts/components')['TooltipComponent']
+  const UniversalTransition: typeof import('echarts/features')['UniversalTransition']
+  const VChart: typeof import('vue-echarts')['VChart']
   const computed: typeof import('vue')['computed']
   const createApp: typeof import('vue')['createApp']
   const customRef: typeof import('vue')['customRef']
   const defineAsyncComponent: typeof import('vue')['defineAsyncComponent']
   const defineComponent: typeof import('vue')['defineComponent']
+  const echarts: typeof import('echarts/core')
   const effectScope: typeof import('vue')['effectScope']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
@@ -43,6 +56,7 @@ declare global {
   const reactive: typeof import('vue')['reactive']
   const readonly: typeof import('vue')['readonly']
   const ref: typeof import('vue')['ref']
+  const registerComponent: typeof import('vue-echarts')['registerComponent']
   const resolveComponent: typeof import('vue')['resolveComponent']
   const shallowReactive: typeof import('vue')['shallowReactive']
   const shallowReadonly: typeof import('vue')['shallowReadonly']
@@ -53,6 +67,7 @@ declare global {
   const toValue: typeof import('vue')['toValue']
   const triggerRef: typeof import('vue')['triggerRef']
   const unref: typeof import('vue')['unref']
+  const use: typeof import('echarts/core')['use']
   const useAttrs: typeof import('vue')['useAttrs']
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVars: typeof import('vue')['useCssVars']
@@ -79,7 +94,17 @@ import { UnwrapRef } from 'vue'
 declare module 'vue' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
+    readonly BarChart: UnwrapRef<typeof import('echarts/charts')['BarChart']>
+    readonly CanvasRenderer: UnwrapRef<typeof import('echarts/renderers')['CanvasRenderer']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly GridComponent: UnwrapRef<typeof import('echarts/components')['GridComponent']>
+    readonly LegendComponent: UnwrapRef<typeof import('echarts/components')['LegendComponent']>
+    readonly LineChart: UnwrapRef<typeof import('echarts/charts')['LineChart']>
+    readonly PieChart: UnwrapRef<typeof import('echarts/charts')['PieChart']>
+    readonly TitleComponent: UnwrapRef<typeof import('echarts/components')['TitleComponent']>
+    readonly ToolboxComponent: UnwrapRef<typeof import('echarts/components')['ToolboxComponent']>
+    readonly TooltipComponent: UnwrapRef<typeof import('echarts/components')['TooltipComponent']>
+    readonly UniversalTransition: UnwrapRef<typeof import('echarts/features')['UniversalTransition']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
     readonly createApp: UnwrapRef<typeof import('vue')['createApp']>
     readonly customRef: UnwrapRef<typeof import('vue')['customRef']>
@@ -126,6 +151,7 @@ declare module 'vue' {
     readonly toValue: UnwrapRef<typeof import('vue')['toValue']>
     readonly triggerRef: UnwrapRef<typeof import('vue')['triggerRef']>
     readonly unref: UnwrapRef<typeof import('vue')['unref']>
+    readonly use: UnwrapRef<typeof import('echarts/core')['use']>
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>

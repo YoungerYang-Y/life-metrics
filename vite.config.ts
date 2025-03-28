@@ -27,6 +27,26 @@ export default defineConfig({
       imports: [
         'vue',
         VueRouterAutoImports,
+        // 自动导入 echarts 相关
+        {
+          'echarts/core': [
+            'use',
+          ],
+          'echarts/charts': [
+            'PieChart',
+            'BarChart',
+            'LineChart',
+          ],
+          'echarts/components': [
+            'LegendComponent',
+            'TitleComponent',
+            'TooltipComponent',
+            'GridComponent',
+            'ToolboxComponent',
+          ],
+          'echarts/features': ['UniversalTransition'],
+          'echarts/renderers': ['CanvasRenderer'],
+        },
       ],
       dts: 'src/auto-imports.d.ts',
       vueTemplate: true, // 允许在 <template> 直接使用自动导入的 API
