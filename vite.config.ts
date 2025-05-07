@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [
     // https://github.com/posva/unplugin-vue-router
     VueRouter({
-      dts: 'src/typed-router.d.ts',
+      dts: 'src/types/typed-router.d.ts',
     }),
 
     // https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue
@@ -19,7 +19,7 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-vue-components
     Components({
-      dts: 'src/components.d.ts',
+      dts: 'src/types/components.d.ts',
     }),
 
     // https://github.com/antfu/unplugin-auto-import
@@ -48,7 +48,7 @@ export default defineConfig({
           'echarts/renderers': ['CanvasRenderer'],
         },
       ],
-      dts: 'src/auto-imports.d.ts',
+      dts: 'src/types/auto-imports.d.ts',
       vueTemplate: true, // 允许在 <template> 直接使用自动导入的 API
     }),
 

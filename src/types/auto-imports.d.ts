@@ -8,7 +8,6 @@ export {}
 declare global {
   const BarChart: typeof import('echarts/charts')['BarChart']
   const CanvasRenderer: typeof import('echarts/renderers')['CanvasRenderer']
-  const ECharts: typeof import('vue-echarts')['ECharts']
   const EffectScope: typeof import('vue')['EffectScope']
   const GridComponent: typeof import('echarts/components')['GridComponent']
   const LegendComponent: typeof import('echarts/components')['LegendComponent']
@@ -18,13 +17,11 @@ declare global {
   const ToolboxComponent: typeof import('echarts/components')['ToolboxComponent']
   const TooltipComponent: typeof import('echarts/components')['TooltipComponent']
   const UniversalTransition: typeof import('echarts/features')['UniversalTransition']
-  const VChart: typeof import('vue-echarts')['VChart']
   const computed: typeof import('vue')['computed']
   const createApp: typeof import('vue')['createApp']
   const customRef: typeof import('vue')['customRef']
   const defineAsyncComponent: typeof import('vue')['defineAsyncComponent']
   const defineComponent: typeof import('vue')['defineComponent']
-  const echarts: typeof import('echarts/core')
   const effectScope: typeof import('vue')['effectScope']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
@@ -56,7 +53,6 @@ declare global {
   const reactive: typeof import('vue')['reactive']
   const readonly: typeof import('vue')['readonly']
   const ref: typeof import('vue')['ref']
-  const registerComponent: typeof import('vue-echarts')['registerComponent']
   const resolveComponent: typeof import('vue')['resolveComponent']
   const shallowReactive: typeof import('vue')['shallowReactive']
   const shallowReadonly: typeof import('vue')['shallowReadonly']
@@ -85,7 +81,7 @@ declare global {
 // for type re-export
 declare global {
   // @ts-ignore
-  export type { Component, ComponentPublicInstance, ComputedRef, DirectiveBinding, ExtractDefaultPropTypes, ExtractPropTypes, ExtractPublicPropTypes, InjectionKey, PropType, Ref, MaybeRef, MaybeRefOrGetter, VNode, WritableComputedRef } from 'vue'
+  export type { Component, Slot, Slots, ComponentPublicInstance, ComputedRef, DirectiveBinding, ExtractDefaultPropTypes, ExtractPropTypes, ExtractPublicPropTypes, InjectionKey, PropType, Ref, MaybeRef, MaybeRefOrGetter, VNode, WritableComputedRef } from 'vue'
   import('vue')
 }
 
