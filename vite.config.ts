@@ -54,6 +54,15 @@ export default defineConfig({
 
     Layouts(),
   ],
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://backend-api.com',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, ''),
+      },
+    },
+  },
   resolve: {
     alias: {
       '@': '/src',
