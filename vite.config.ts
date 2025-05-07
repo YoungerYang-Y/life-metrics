@@ -54,4 +54,9 @@ export default defineConfig({
 
     Layouts(),
   ],
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
 })
