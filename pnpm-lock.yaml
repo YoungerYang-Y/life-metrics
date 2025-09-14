@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       axios:
-        specifier: ^1.9.0
-        version: 1.11.0
+        specifier: ^1.12.0
+        version: 1.12.0
       echarts:
         specifier: ^5.6.0
         version: 5.6.0
@@ -38,7 +38,7 @@ importers:
         version: 3.1.0
       '@vitejs/plugin-vue':
         specifier: ^5.2.4
-        version: 5.2.4(vite@6.3.5(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1))(vue@3.5.21(typescript@5.8.3))
+        version: 5.2.4(vite@6.3.6(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1))(vue@3.5.21(typescript@5.8.3))
       '@vue/tsconfig':
         specifier: ^0.7.0
         version: 0.7.0(typescript@5.8.3)(vue@3.5.21(typescript@5.8.3))
@@ -71,10 +71,10 @@ importers:
         version: 0.12.0(vue-router@4.5.1(vue@3.5.21(typescript@5.8.3)))(vue@3.5.21(typescript@5.8.3))
       vite:
         specifier: ^6.3.5
-        version: 6.3.5(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1)
+        version: 6.3.6(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1)
       vite-plugin-vue-layouts:
         specifier: ^0.11.0
-        version: 0.11.0(vite@6.3.5(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1))(vue-router@4.5.1(vue@3.5.21(typescript@5.8.3)))(vue@3.5.21(typescript@5.8.3))
+        version: 0.11.0(vite@6.3.6(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1))(vue-router@4.5.1(vue@3.5.21(typescript@5.8.3)))(vue@3.5.21(typescript@5.8.3))
       vue-tsc:
         specifier: ^2.2.10
         version: 2.2.12(typescript@5.8.3)
@@ -925,8 +925,8 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  axios@1.11.0:
-    resolution: {integrity: sha512-1Lx3WLFQWm3ooKDYZD1eXmoGO9fxYQjrycfHFC8P0sCfQVXyROp0p9PFWBehewBOdCwHc+f/b8I0fMto5eSfwA==}
+  axios@1.12.0:
+    resolution: {integrity: sha512-oXTDccv8PcfjZmPGlWsPSwtOJCZ/b6W5jAMCNcfwJbCzDckwG0jrYJFaWH1yvivfCXjVzV/SPDEhMB3Q+DSurg==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -1524,8 +1524,8 @@ packages:
   flatted@3.3.3:
     resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
 
-  follow-redirects@1.15.9:
-    resolution: {integrity: sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==}
+  follow-redirects@1.15.11:
+    resolution: {integrity: sha512-deG2P0JfjrTxl50XGCDyfI97ZGVCxIpfKYmfyrQ54n5FO/0gfIES8C/Psl6kWVDolizcaaxZJnTS0QSMxvnsBQ==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -2549,8 +2549,8 @@ packages:
       vue: ^3.2.4
       vue-router: ^4.0.11
 
-  vite@6.3.5:
-    resolution: {integrity: sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==}
+  vite@6.3.6:
+    resolution: {integrity: sha512-0msEVHJEScQbhkbVTb/4iHZdJ6SXp/AvxL2sjwYQFfBqleHtnCqv1J3sa9zbWz/6kW1m9Tfzn92vW+kZ1WV6QA==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -3356,9 +3356,9 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
-  '@vitejs/plugin-vue@5.2.4(vite@6.3.5(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1))(vue@3.5.21(typescript@5.8.3))':
+  '@vitejs/plugin-vue@5.2.4(vite@6.3.6(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1))(vue@3.5.21(typescript@5.8.3))':
     dependencies:
-      vite: 6.3.5(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1)
+      vite: 6.3.6(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1)
       vue: 3.5.21(typescript@5.8.3)
 
   '@vitest/eslint-plugin@1.3.9(eslint@9.35.0(jiti@2.4.2))(typescript@5.8.3)':
@@ -3573,9 +3573,9 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.11.0:
+  axios@1.12.0:
     dependencies:
-      follow-redirects: 1.15.9
+      follow-redirects: 1.15.11
       form-data: 4.0.4
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -4283,7 +4283,7 @@ snapshots:
 
   flatted@3.3.3: {}
 
-  follow-redirects@1.15.9: {}
+  follow-redirects@1.15.11: {}
 
   form-data@4.0.4:
     dependencies:
@@ -5426,17 +5426,17 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-plugin-vue-layouts@0.11.0(vite@6.3.5(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1))(vue-router@4.5.1(vue@3.5.21(typescript@5.8.3)))(vue@3.5.21(typescript@5.8.3)):
+  vite-plugin-vue-layouts@0.11.0(vite@6.3.6(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1))(vue-router@4.5.1(vue@3.5.21(typescript@5.8.3)))(vue@3.5.21(typescript@5.8.3)):
     dependencies:
       debug: 4.4.1
       fast-glob: 3.3.3
-      vite: 6.3.5(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1)
+      vite: 6.3.6(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1)
       vue: 3.5.21(typescript@5.8.3)
       vue-router: 4.5.1(vue@3.5.21(typescript@5.8.3))
     transitivePeerDependencies:
       - supports-color
 
-  vite@6.3.5(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1):
+  vite@6.3.6(@types/node@22.15.18)(jiti@2.4.2)(yaml@2.8.1):
     dependencies:
       esbuild: 0.25.9
       fdir: 6.4.4(picomatch@4.0.2)
