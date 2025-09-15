@@ -35,7 +35,7 @@
     "eslint-plugin-format": "^1.0.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.0.0",
-    "typescript": "~5.8.3",
+    "typescript": "~5.9.2",
     "unplugin-auto-import": "^19.3.0",
     "unplugin-vue-components": "^28.5.0",
     "unplugin-vue-router": "^0.12.0",
